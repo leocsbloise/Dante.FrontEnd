@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<p align="center">
+  <img src="assets/logo.png" alt="Dante" width="253"><br>
+  <img src="https://img.shields.io/github/v/release/leocsbloise/Dante.FrontEnd?label=version&color=12141A" alt="version">
+</p>
 
-## Getting Started
+<p align="center">
+  A personal finance manager where you can keep your life in order.
+</p>
 
-First, run the development server:
+This is the web client for Dante, a personal finance manager where you can keep your life in order. You open it in a browser, sign in, keep the accounts you use, and write down the money that moves between them.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+It is not connected to any bank or banking service. Nothing is read from an account, a card, or a provider. Every register comes from you. A name you choose and a password are enough. No personal data is asked.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Sign in to your own place
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You create a name and a password, then come back with them. After that, the accounts and the history you see are yours alone.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Keep the accounts you use
 
-## Learn More
+A catalog of Brazilian banks is there so you can pick one by its name and logo. Picking a bank does not open or reach an account at that bank. You create the account yourself and give it a name, such as checking or savings. When an account is no longer part of your life, you remove it, and the movements that used it go with it.
 
-To learn more about Next.js, take a look at the following resources:
+## Write down a movement
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+When money leaves one of your accounts and arrives in another, you record both sides, the amount, and when it happened, in the time zone where you live. The amount is what you entered. Dante does not receive the movement from a bank.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Look back
 
-## Deploy on Vercel
+You can read that history by the account the money left, by the account it arrived in, or across a stretch of time: a day, a month, or any window you choose. A longer history continues on the next page.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Technical details are in the [wiki](https://github.com/leocsbloise/Dante.FrontEnd/wiki).
