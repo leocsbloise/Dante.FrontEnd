@@ -2,12 +2,47 @@
 
 @theme inline {
   --color-canvas: #dfe2eb;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f2f5fa;
+  --color-sunken: #ebeef3;
   --color-ink: #12141a;
   --color-muted: #8b909a;
+  --color-line: #e4e7ee;
+  --color-inverse: #14161c;
+  --color-inverse-muted: #a7abb3;
   --color-alert: #c4473d;
   --color-alert-wash: #fae8e7;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+}
+
+@layer base {
+  button,
+  [type="button"],
+  [type="submit"],
+  [type="reset"] {
+    cursor: pointer;
+  }
+
+  button:disabled,
+  [type="button"]:disabled,
+  [type="submit"]:disabled,
+  [type="reset"]:disabled {
+    cursor: default;
+  }
+}
+
+.material {
+  background: rgb(255 255 255 / 72%);
+  backdrop-filter: blur(28px) saturate(1.6);
+  border: 1px solid rgb(255 255 255 / 65%);
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .material {
+    background: #f7f8fb;
+    backdrop-filter: none;
+  }
 }
 
 body {
