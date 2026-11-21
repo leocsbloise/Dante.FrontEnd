@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useState, type FormEvent } from "react";
+import { Spinner } from "@/components/spinner";
 import { TextField } from "@/components/text-field";
 
 type FieldErrors = Partial<Record<"username" | "password", string>>;
@@ -90,8 +91,9 @@ export function RegisterForm() {
       <button
         type="submit"
         disabled={pending}
-        className="mt-1 h-[52px] cursor-pointer rounded-full bg-ink text-[15px] font-semibold text-white disabled:opacity-60"
+        className="mt-1 inline-flex h-[52px] cursor-pointer items-center justify-center gap-2 rounded-full bg-ink text-[15px] font-semibold text-white disabled:opacity-60"
       >
+        {pending ? <Spinner /> : null}
         Criar conta
       </button>
     </form>
