@@ -1,0 +1,9 @@
+# v0.0.1
+
+The first version of the Dante web client.
+
+You sign in with a name you choose and a password. The session stays in an httpOnly cookie, so the browser never holds the token. Dante asks for no personal data, and it is not connected to any bank or banking service. Every account and movement is a record you enter.
+
+- See the balance of each account, the net for the current day, week, or month, and the latest movements.
+- Add an account from the Brazilian bank catalog, with its logo.
+- Search movements by the account the money left, the account it arrived in, or a stretch of time, and record a new one.
